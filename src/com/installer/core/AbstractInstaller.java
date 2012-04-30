@@ -91,10 +91,6 @@ public abstract class AbstractInstaller<T extends AbstractState<?>> {
 		return (T) currentState.getNewInstance();
 	}
 	
-	public T getState() {
-		return currentState;
-	}
-	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
