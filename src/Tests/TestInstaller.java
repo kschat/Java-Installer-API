@@ -13,4 +13,12 @@ public class TestInstaller extends AbstractInstaller<TestState> {
 	public TestInstaller(Vector<TestState> states, File installDir) {
 		super(states, installDir);
 	}
+	
+	public void setSettingsForInstall() {
+		
+	}
+	
+	public void setInstallType() {
+		
+	}
 }

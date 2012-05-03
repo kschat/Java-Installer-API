@@ -2,11 +2,11 @@ package Tests;
 
 import java.io.*;
 import java.util.*;
-import com.installer.core.*;
 
 public class AbstractInstallerDemo {
 
 	public static void main(String[] args) {
+		
 		Stack<TestState> stack = new Stack<TestState>();
 		stack.push(new TestState("State 4", 3));
 		stack.push(new TestState("State 3", 2));

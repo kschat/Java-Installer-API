@@ -87,9 +87,21 @@ public abstract class AbstractInstaller<T extends AbstractState<?>> {
 	
 	/*Returns a reference to the object in the current state.
 	 */
+	@SuppressWarnings("unchecked")
 	public T getCurrentState() {
 		return (T) currentState.getNewInstance();
 	}
+	
+	/* Abstract method that should be implemented to set the
+	 * settings for the installer to use when installing the
+	 * file.
+	 */
+	public abstract void setSettingsForInstall();
+	
+	/* Abstract method that should be implemented to set the
+	 * install type of the file.
+	 */
+	public abstract void setInstallType();
 	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
